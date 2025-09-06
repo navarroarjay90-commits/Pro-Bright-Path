@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT College Program Pre-Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Pre-Assessment Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+    <div class="welcome-container" id="welcome-container" style="display:none;">
+        <h2>Welcome, Student 1!</h2>
+        <p>This is the Pre-Assessment Website for ICT College Program Selection of SHS ICT Students of Nagpayong High School.</p>
+        <form id="assessment-form">
+            <ol>
+                <li> I am interested in pursuing an ICT-related college program.
+                    <div class="likert">
+                        <label><input type="radio" name="q1" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q1" value="2"> Disagree</label>
+                        <label><input type="radio" name="q1" value="3"> Neutral</label>
+                        <label><input type="radio" name="q1" value="4"> Agree</label>
+                        <label><input type="radio" name="q1" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I feel confident in my computer skills.
+                    <div class="likert">
+                        <label><input type="radio" name="q2" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q2" value="2"> Disagree</label>
+                        <label><input type="radio" name="q2" value="3"> Neutral</label>
+                        <label><input type="radio" name="q2" value="4"> Agree</label>
+                        <label><input type="radio" name="q2" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I enjoy solving technical problems.
+                    <div class="likert">
+                        <label><input type="radio" name="q3" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q3" value="2"> Disagree</label>
+                        <label><input type="radio" name="q3" value="3"> Neutral</label>
+                        <label><input type="radio" name="q3" value="4"> Agree</label>
+                        <label><input type="radio" name="q3" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I am comfortable working with new technologies.
+                    <div class="likert">
+                        <label><input type="radio" name="q4" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q4" value="2"> Disagree</label>
+                        <label><input type="radio" name="q4" value="3"> Neutral</label>
+                        <label><input type="radio" name="q4" value="4"> Agree</label>
+                        <label><input type="radio" name="q4" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I am interested in programming and coding.
+                    <div class="likert">
+                        <label><input type="radio" name="q5" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q5" value="2"> Disagree</label>
+                        <label><input type="radio" name="q5" value="3"> Neutral</label>
+                        <label><input type="radio" name="q5" value="4"> Agree</label>
+                        <label><input type="radio" name="q5" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+            </ol>
+            <button type="submit">Next</button>
+        </form>
+        <div id="assessment-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

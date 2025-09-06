@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Pre-Assessment - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Pre-Assessment (Questions 6-10)</h2>
+        <form id="assessment-form-2">
+            <ol start="6">
+                <li> I am willing to learn new ICT concepts and skills.
+                    <div class="likert">
+                        <label><input type="radio" name="q6" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q6" value="2"> Disagree</label>
+                        <label><input type="radio" name="q6" value="3"> Neutral</label>
+                        <label><input type="radio" name="q6" value="4"> Agree</label>
+                        <label><input type="radio" name="q6" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I can work independently on ICT tasks.
+                    <div class="likert">
+                        <label><input type="radio" name="q7" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q7" value="2"> Disagree</label>
+                        <label><input type="radio" name="q7" value="3"> Neutral</label>
+                        <label><input type="radio" name="q7" value="4"> Agree</label>
+                        <label><input type="radio" name="q7" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I am interested in careers related to ICT.
+                    <div class="likert">
+                        <label><input type="radio" name="q8" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q8" value="2"> Disagree</label>
+                        <label><input type="radio" name="q8" value="3"> Neutral</label>
+                        <label><input type="radio" name="q8" value="4"> Agree</label>
+                        <label><input type="radio" name="q8" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I am able to communicate technical information clearly.
+                    <div class="likert">
+                        <label><input type="radio" name="q9" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q9" value="2"> Disagree</label>
+                        <label><input type="radio" name="q9" value="3"> Neutral</label>
+                        <label><input type="radio" name="q9" value="4"> Agree</label>
+                        <label><input type="radio" name="q9" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+                <li> I am motivated to succeed in an ICT college program.
+                    <div class="likert">
+                        <label><input type="radio" name="q10" value="1" required> Strongly Disagree</label>
+                        <label><input type="radio" name="q10" value="2"> Disagree</label>
+                        <label><input type="radio" name="q10" value="3"> Neutral</label>
+                        <label><input type="radio" name="q10" value="4"> Agree</label>
+                        <label><input type="radio" name="q10" value="5"> Strongly Agree</label>
+                    </div>
+                </li>
+            </ol>
+            <button type="submit">Submit Assessment</button>
+        </form>
+        <div id="loading-screen" style="display:none;">
+            <h3>Analyzing your answers...</h3>
+            <div class="loader"></div>
+        </div>
+        <div id="assessment-message-2"></div>
+    </div>
+        <script src="script.js"></script>
+        <style>
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #2e8b57;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        </style>
+</body>
+</html>
